@@ -13,4 +13,5 @@ scriptedLaunchOpts ++= Seq(
   "-XX:ReservedCodeCacheSize=128m",
   "-Xss2m",
   "-Dfile.encoding=UTF-8",
+  "org.slf4j" % "slf4j-simple" % "1.7.36" % Runtime exclude("org.slf4j", "slf4j-nop")
 )
